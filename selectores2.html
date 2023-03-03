@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores Combinadores</title>
+    <style>
+        header p {
+            color: blue;
+        }
+        section > article {
+            background-color: aqua;
+        }
+        footer + div {
+            background-color: blueviolet;
+        }
+        p ~ li {
+            color: limegreen;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header> 
+        <p> Primer Parrafo en Header bajo el selector combinador Descendiente</p>
+        <p> Segundo Parrafo en Header bajo el selector combinador Descendiente</p>
+    </header>
+
+    <section>
+        <article> Articulo 1 - Hijo de section - Estoy aplicando el combinador Hijo Directo
+            <p>Parrafo hijo directo del Articulo 1, el cual es hijo directo de Section</p>
+            <p>Parrafo Segundo hijo de Articulo 1</p>
+        </article>
+        <P> Parrafo hijo de section pero no de Articulo 1 - Osea es el segundo hijo de section </P>
+    </section>
+    
+    <footer> En footer estoy aplizando el selector combinador Adyasente con el div mas abajo
+        <p>Primer Parrafo en Footer</p>
+        <p>Segundo Parrafo en Footer</p>
+        <p>Esto lo que hace es que le da la propiedad al adyasente (el siguiente por abajo en el codigo, mas no al mismo que estoy colocando</p>
+    </footer>
+    <div> Este es el div con el selector combinador Adyasente con Footer </div>
+
+    <section>
+        <p>
+            Esto es una lista dentro de otra section y voy a aplicar el selector combinador de Hermanos para los items li que voy a agregar a continuación:
+            <li>Hermano 1 - Hijo de ul</li>
+            <li>Hermano 2 - Hijo de ul</li>
+        </p>
+        <p>Parrafo hermano</p>
+    </section>
+</body>
+</html> 
