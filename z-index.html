@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        div {
+            position: absolute;
+            top: 20px;
+        }
+        .primernombre {
+            top: 25px;
+            z-index: 3;
+            color: green
+        }
+        #segundonombre {
+            top: 32px;
+            z-index: 4;
+            color: blue
+        }
+        #primerapellido {
+            top: 39px;
+            z-index: 3;
+            color: red;
+        }
+        .segundoapellido {
+            top: 46px;
+            z-index: 2;
+            color: fuchsia
+        }
+        .nickname {
+            top: 2px;
+            color:orange
+        }
+        .sector {
+            top: 2px;
+            color: aqua;
+        }
+
+    </style>
+   
+</head>
+<body>
+    <div class="primernombre"> Bernardo 
+        <div class="nickname"> Naro </div>
+    </div>
+    <div id="segundonombre"> Antonio </div>
+    <div id="primerapellido"> Dávila 
+        <div class="sector"> Los Dávilas</div>
+    </div>
+    <div class="segundoapellido"> Rondón </div>
+</body>
+</html>
