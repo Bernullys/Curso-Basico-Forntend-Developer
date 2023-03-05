@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posición Estatica</title>
+    <style>
+        * {
+            margin: 10px;
+            padding: 50px;
+            border: 50px;
+            background-color: brown;
+        }
+        .container {
+            position: static;
+            top: 1000px;            /* la position static previene de que las propiedades botton, left, right tengan efecto*/
+            bottom: 100px;
+            left: 20px;
+            right: 20px;
+            background-color: aqua;
+            margin: 0;
+        }
+        .container p:nth-child(2n+1) { /* Los hijos perforan el background del continer - en caso de que los hijos no tengan background, va a quedar el de todo el estilo*/
+            background-color: blue;
+        }
+        .container p:nth-child(2n) {
+            background-color: rgb(68, 255, 0);
+        }
+        .container p {
+            width: 250px;
+            height: 250px;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="container"> Sección Estatica 
+        <p>Parrafo Estatico 1</p>
+        <p>Parrafo Estatico 2</p>
+        <p>Parrafo Estatico 3</p>
+        <p>Parrafo Estatico 4</p>
+        <p>Parrafo Estatico 5</p>
+    </section>
+    
+</body>
+</html>

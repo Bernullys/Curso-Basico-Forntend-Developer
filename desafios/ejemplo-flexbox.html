@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        width: 100%;
+        height: 1000px;
+        background-color: cyan;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #amarillo{
+        background-color: yellow;
+        width: 300px;
+        height: 30px;
+        
+    }
+    #azul{
+        background-color: blue;
+        width: 300px;
+        height: 30px;
+    }
+    #rojo{
+        background-color: red;
+        width: 300px;
+        height: 30px;
+    }
+    .stars {
+        display: flex;
+        color: white;
+        flex-direction: row;
+        
+    }
+    li {
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        margin: 2px;
+        position: relative;
+        top: -73px;
+
+    }
+
+</style>
+<body>
+    <section class="container">
+        <div> Bandera de Venezuela </div>
+        <div id="amarillo"></div>
+        <div id="azul"></div>
+        <div id="rojo"></div>
+        <ul class="stars"}>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+    
+</body>
+</html>
