@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentation Card</title>
+    <style>
+
+        .section1{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: center;
+
+        }
+
+        .card{
+            width: 250px;
+            height: 350px;
+            border-radius: 20px;
+            overflow: hidden;
+            background-color: beige;
+
+        }
+        img {
+            width: 250px;
+            height: 200px;
+        }
+
+        .section2{
+            width: 250px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+
+        }
+        p{
+            font-weight: 600;
+            font-style: oblique;
+            border: 0px;
+            padding: 0px;
+            margin: 3px;
+        }
+        #titulo{
+            text-align: center;
+            font-size: large;
+            color: darkblue;
+        }
+
+        /* en vez de hacer otra sección pude darle propiedades a los parrafos como hice con el titulo y utilizando .card nth:child() */
+   
+
+    </style>
+</head>
+<body>
+    <section class="section1">
+        <div class="card">
+            <img src="https://images.pexels.com/photos/15476701/pexels-photo-15476701.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="paisaje">
+            <p id="titulo"> Ing. Eléctricista </p>
+            <section class="section2">
+                <p> Bernardo A. Dávila R. </p>
+                <p> +56 977545456 </p>
+                <p> bernardoantoniod@gmail.com </p>
+            </section>
+            
+        </div>
+    </section>
+    
+</body>
+</html>
