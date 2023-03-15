@@ -7,15 +7,11 @@
     <title>Targeta de presentación</title>
     <style>
         .container {
-            width: 100%;
+            width: 600px;
+            height: 430px;
             display: flex;
             justify-content: center;
             
-        }
-        #cabecera {
-            font-style: italic;
-            font-size: large;
-            position: absolute;
         }
         .card {
             width: 600px;
@@ -25,21 +21,31 @@
             border-radius: 50px;
 
         }
-        .card img {
-            width: 100%;
+        .container img {
+            width: 0px;
+            flex-grow: 1;
+            object-fit: cover;
+            opacity: .8;
+            transition: 0.5;
+        }
+        .container img:hover {
+            cursor: crosshair;
+            width: 300px;
+            opacity: 1;
+            filter: contrast(120%);
+
+
         }
     </style>
 </head>
 <body>
-    <header id="cabecera"> Bernardo A. Dávila R.</header>
     <section class="container">
-        <article class="card" >
             <img src="https://scontent-scl2-1.xx.fbcdn.net/v/t31.18172-8/327473_4711803552243_1535829639_o.jpg?_nc_cat=105&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeGeasZXwsqhy-c3Ed-7UzURyXRG5lmqPnzJdEbmWao-fEIvWzSMHdStcpILJy2zsw8&_nc_ohc=DSLuTeLrMrwAX9wV6_0&_nc_ht=scontent-scl2-1.xx&oh=00_AfCiz4oruZ7vJUmqpI1alQu9KW4LVl8B-nUH41vcVLgl9g&oe=642972C5" alt="paisaje">
-                <section>
-                    <img src="https://scontent-scl2-1.xx.fbcdn.net/v/t1.18169-9/10922558_10206166714506035_6481907815971255461_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGnX3Br38P_YXHVHusqy5VffDVcldvONTp8NVyV2841Ol-ZzRS5f7CkHt9rbsHljhc&_nc_ohc=fv0nRwE-TXUAX_CeY-x&_nc_ht=scontent-scl2-1.xx&oh=00_AfA7F8zKe-g04moD94yNk-aaFV-FcMdBwZWy4OfixIKOKg&oe=642961DF" alt="Bernardo y Thor">
-                </section>
-
-        </article>
+            <img src="https://scontent-scl2-1.xx.fbcdn.net/v/t1.18169-9/10922558_10206166714506035_6481907815971255461_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGnX3Br38P_YXHVHusqy5VffDVcldvONTp8NVyV2841Ol-ZzRS5f7CkHt9rbsHljhc&_nc_ohc=fv0nRwE-TXUAX_CeY-x&_nc_ht=scontent-scl2-1.xx&oh=00_AfA7F8zKe-g04moD94yNk-aaFV-FcMdBwZWy4OfixIKOKg&oe=642961DF" alt="Bernardo y Thor">
+            <img src="https://scontent-eze1-1.xx.fbcdn.net/v/t31.18172-8/11728715_10207693515795113_7849291704544108002_o.jpg?_nc_cat=100&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeF54nbJIwMy6YHRcxwGGXZQCeEMbrMugSgJ4Qxusy6BKKHFs-SyeLDoxq9iJ6SZJM0&_nc_ohc=3ABOblQHj0gAX-Jo-nx&_nc_ht=scontent-eze1-1.xx&oh=00_AfDaevAUu47rt3m7NFduFkXASL_HPwSFWBQe7ahmV4kTnA&oe=6429C510" alt="paisaje">
+            <img src="https://scontent-eze1-1.xx.fbcdn.net/v/t31.18172-8/1524498_10203091823435680_1298681734_o.jpg?_nc_cat=104&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeEU--yAb3FletiCeFm_I7ubpB7jRa3AI2ykHuNFrcAjbOM6DMFpUTVotuUKqCwqhHw&_nc_ohc=5wz8JbeVVmsAX8rDnjV&_nc_ht=scontent-eze1-1.xx&oh=00_AfAcQL_gsNU8RN-XuOoMcwXgdGGWOAIWfS2WZjPHIM-Svg&oe=6429CB8D" alt="Salto">
+            <img src="https://scontent-eze1-1.xx.fbcdn.net/v/t31.18172-8/1537713_10202968521993221_1896063140_o.jpg?_nc_cat=111&ccb=1-7&_nc_sid=19026a&_nc_eui2=AeHk5yIwYPBsPqwLf3U13qksWm1hu3Kf3qhabWG7cp_eqGgV3gc8AOtMiaDOzP5CA84&_nc_ohc=8MNtcJCS3ZAAX9qAx4V&_nc_ht=scontent-eze1-1.xx&oh=00_AfAqrBKBWjBe_H_FCJ01Qh6pNdVMAx22nDJ-O3zwjlXNQg&oe=6429A36C" alt="bici">
+            <img src="https://scontent-eze1-1.xx.fbcdn.net/v/t39.30808-6/327471416_927405738261413_2562564445579293552_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeGXUTCZ7DsZNr82bFjr64DeCsMvcrnNPdIKwy9yuc090hrO4CKlGRxGoF38dZf5Gmg&_nc_ohc=4iajgBpti6UAX_GSAPc&_nc_ht=scontent-eze1-1.xx&oh=00_AfDmHLzJf_TirxyimM0yjvU5sVC4_E_lQ_O51NK5uS7l0A&oe=640784E5" alt="Mérida">
        
     </section>
     
